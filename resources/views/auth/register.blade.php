@@ -47,7 +47,7 @@
                               <select id="user_role" class="form-control{{ $errors->has('user_role') ? ' is-invalid' : '' }}" name="user_role" value="user_role"  required >
                                 <option value=""></option>
                                 <option value="HCP">HCP</option>
-                                <option value="Doctor">Doctor</option>
+                                <!-- <option value="Doctor">Doctor</option> -->
                                 <option value="GA">GA</option>
                                 <option value="Patient">Patient</option>
                                 <option value="Customer">Customer</option>
