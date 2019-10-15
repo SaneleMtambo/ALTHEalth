@@ -15,7 +15,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text">$<span class="count">23569</span></div>
+                                            <div class="stat-text">R<span class="count">2569</span></div>
                                             <div class="stat-heading">Stock</div>
                                         </div>
                                     </div>
@@ -33,7 +33,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">3435</span></div>
+                                            <div class="stat-text"><span class="count">35</span></div>
                                             <div class="stat-heading"> Appointments </div>
                                         </div>
                                     </div>
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text"><span class="count">2986</span></div>
+                                            <div class="stat-text"><span class="count">26</span></div>
                                             <div class="stat-heading">Patients</div>
                                         </div>
                                     </div>
