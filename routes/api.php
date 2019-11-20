@@ -26,6 +26,44 @@ Route::group( [ 'prefix' => 'patient'], function()
     Route::post('bookAppointment','AppointmentController@bookAppointment');
   
 
+    Route::post('deleteAppointment','AppointmentController@deleteAppointment');
+  
 
 
 });
+
+
+Route::group( [ 'prefix' => 'HCP'], function()
+{
+
+    Route::post('acceptAppointment','AppointmentController@acceptAppointment');
+  
+    
+    Route::post('declineAppointment','AppointmentController@declineAppointment');
+    
+    
+    Route::post('addstock','SupplementController@create');
+    
+
+
+
+});
+
+
+Route::group( [ 'prefix' => 'GA'], function()
+{
+
+    Route::post('deletesupplement','SupplementController@deletesupplement');
+  
+    
+    // Route::post('declineAppointment','AppointmentController@declineAppointment');
+    
+    
+    // Route::post('addstock','SupplementController@create');
+    
+
+
+
+});
+
+//deletesupplement

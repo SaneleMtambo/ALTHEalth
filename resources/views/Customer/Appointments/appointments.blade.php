@@ -1,4 +1,4 @@
-@extends('Patient')
+@extends('customer')
 
 @section('content')
 <div class="content">

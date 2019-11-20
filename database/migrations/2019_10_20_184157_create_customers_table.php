@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateGaTable extends Migration
+class CreateCustomersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,16 +13,20 @@ class CreateGaTable extends Migration
      */
     public function up()
     {
-        Schema::create('ga', function (Blueprint $table) {
+        Schema::create('customers', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('hcp_id')->nullable();
             $table->string('ga_id')->nullable();
-            $table->string('name');
-            $table->string('cellphone');
-            $table->string('email')->unique();
+            $table->string('customer_Name');
+            $table->string('customer_Surname');
+            $table->string('customer_Email');
+            $table->string('customer_Celphone');
+            $table->string('customer_Addresss');
             $table->timestamps();
         });
     }
 
+    
     /**
      * Reverse the migrations.
      *
@@ -30,6 +34,6 @@ class CreateGaTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('ga');
+        Schema::dropIfExists('customers');
     }
 }

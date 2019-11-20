@@ -17,6 +17,8 @@ class CreateHCPsTable extends Migration
             $table->increments('id');
             $table->string('user_id');
             $table->string('name');
+            $table->string('cellphone');
+            $table->string('cellphone2');
             $table->string('email');
             $table->timestamps();
         });

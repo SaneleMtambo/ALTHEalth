@@ -1,4 +1,4 @@
-@extends('HCP')
+@extends('GA')
 
 @section('content')
 <div class="content">
@@ -14,14 +14,18 @@
                             <div class="card-body">
                                 <h4 class="box-title">Appointments </h4>
                         
-                            <table class="table table-centered table-striped"id="appointment_data">
+                            <table class="table table-centered table-striped"id="appointment_dataHCP">
                                                 <thead>
                                                     <tr>
                                                         <th>ID</th>
+                                                        <th>Time</th>
                                                         <th>Summary</th>
                                                         <th>Reason</th>
                                                          <th>Medical</th> 
+                                                         <th>Appointment Time</th>
+                                                         <th>Appointment Date</th>
                                                          <th>Medical Aid Type</th>
+                                                        
                                                         <th>Action</th> 
                                                     </tr>
                                                 </thead>

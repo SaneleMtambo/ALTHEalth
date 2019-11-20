@@ -15,7 +15,7 @@
                                     </div>
                                     <div class="stat-content">
                                         <div class="text-left dib">
-                                            <div class="stat-text">$<span class="count">23569</span></div>
+                                            <div class="stat-text">R<span class="count">23569</span></div>
                                             <div class="stat-heading">Stock</div>
                                         </div>
                                     </div>
@@ -80,21 +80,32 @@
                 </div>
                 <!-- /Widgets -->
                 <!--  Traffic  -->
+                <div class="animated fadeIn">
                 <div class="row">
-                    <div class="col-lg-12">
-                        <div class="card">
+@foreach($supplements as $supplement)
+                   <div class="col-md-4">
+                   <a href="\login"><div class="card">
+                            <img class="card-img-top" src="images/medical.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <h4 class="box-title">Dashboard </h4>
+                                <p class="card-text"></p> 
+                                <p class="card-text">Discription :{{$supplement->description}}</p>
+                                <p class="card-text">Stock level :{{$supplement->stock_level}}</p>
+                                <p class="card-text">Price :R{{$supplement->cost_incl}}</p>
                             </div>
-                           
-                            <div class="card-body"></div>
-                        </div>
-                    </div><!-- /# column -->
-                </div>
+                        </div></a>
+                    </div>
+                  @endforeach
+
+                 
+         
                 <!--  /Traffic -->
                 <div class="clearfix"></div>
                 <!-- Orders -->
-          
+          </div>
+          </div>
+          <div class="text-center">
+                {{ $supplements->links() }}
+           </div>
             <!-- /#add-category -->
             </div>
             <!-- .animated -->
