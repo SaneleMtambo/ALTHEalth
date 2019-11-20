@@ -184,9 +184,7 @@
 
 
 
-         
-
-
+         <!-- my supplements -->
 
 @foreach($supplements as $supplement)
                    <div class="col-md-4">
